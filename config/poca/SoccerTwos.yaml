@@ -13,7 +13,7 @@ behaviors:
     network_settings:
       normalize: false
       hidden_units: 512
-      num_layers: 2
+      num_layers: 4
       vis_encode_type: simple
     reward_signals:
       extrinsic:
@@ -21,8 +21,8 @@ behaviors:
         strength: 1.0
     keep_checkpoints: 5
     max_steps: 50000000
-    time_horizon: 1000
-    summary_freq: 10000
+    time_horizon: 2000
+    summary_freq: 30000
     self_play:
       save_steps: 50000
       team_change: 200000
