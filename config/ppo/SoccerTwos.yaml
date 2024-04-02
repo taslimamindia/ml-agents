@@ -14,10 +14,13 @@ behaviors:
       normalize: false
       hidden_units: 128
       num_layers: 2
+      memory:
+        sequence_length: 64
+        memory_size: 256
     reward_signals:
       extrinsic:
         gamma: 0.99
         strength: 1.0
     max_steps: 5e6
     time_horizon: 64
-    summary_freq: 30000
+    summary_freq: 10000
