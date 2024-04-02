@@ -1,5 +1,5 @@
 behaviors:
-  SoccerTwosAgent:
+  SoccerTwos:
     trainer_type: ppo
     hyperparameters:
       batch_size: 1024
