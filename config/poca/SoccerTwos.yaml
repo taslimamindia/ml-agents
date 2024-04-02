@@ -23,9 +23,9 @@ behaviors:
         gamma: 0.99
         strength: 1.0
     keep_checkpoints: 5
-    max_steps: 15000000
+    max_steps: 30000000
     time_horizon: 10000000
-    summary_freq: 50000
+    summary_freq: 100000
     self_play:
       save_steps: 50000
       team_change: 200000
