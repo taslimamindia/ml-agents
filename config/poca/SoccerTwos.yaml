@@ -12,20 +12,17 @@ behaviors:
       learning_rate_schedule: constant
     network_settings:
       normalize: false
-      hidden_units: 512
+      hidden_units: 128
       num_layers: 4
       vis_encode_type: simple
-      memory:
-        sequence_length: 64
-        memory_size: 256
     reward_signals:
       extrinsic:
         gamma: 0.99
         strength: 1.0
     keep_checkpoints: 5
     max_steps: 50000000
-    time_horizon: 10000000
-    summary_freq: 100000
+    time_horizon: 100000
+    summary_freq: 50000
     self_play:
       save_steps: 50000
       team_change: 200000
